@@ -5,11 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fetch Prectice</title>
+    <style>
+
+         .all-btn button{
+              padding: 10px 20px;
+         }
+
+         .all-btn {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0px;
+         }
+
+         #post-btn{
+            background-color: aqua;
+            border: none;
+            border-radius: 6px;
+         }
+         body{
+            margin: 0;
+         }
+         #post-body{
+            background-color: bisque;
+            padding: 20px 30px;
+            
+         }
+         #comment-body{
+            background-color: rgba(230, 57, 138, 0.505);
+            padding: 20px 30px;
+            display: none;
+            
+         }
+
+         .postdib{
+            background-color: rgba(81, 255, 0, 0.339);
+            padding: 10px 30px;
+            margin-bottom: 10px;
+         }
+         .comdiv{
+            background-color: rgba(19, 135, 207, 0.641);
+            padding: 10px 30px;
+            margin-bottom: 10px;
+         }
+    </style>
 </head>
 
 <body>
-    <button id="clickbtn">Click Post</button>
+    <!-- <button id="clickbtn">Click Post</button> -->
+
+      <div class="all-btn">
+             <button id="post-btn">Post Click</button>
+             <button id="comment-btn">Comment Click</button>
+      </div>
+
+       <div id="post-body">
+           
+       </div>
+       <div id="comment-body">
+           
+       </div>
+        
     <script src="index.js"></script>
+    <script src="post.js"></script>
 </body>
 
 </html>
